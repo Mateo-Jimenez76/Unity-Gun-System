@@ -1,5 +1,5 @@
 {
-    "name": "ExamplePackage.Editor",
+    "name": "SimpleGunSystem.Editor",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": ["Editor"],

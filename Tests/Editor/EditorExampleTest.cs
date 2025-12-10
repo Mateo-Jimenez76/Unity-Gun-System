@@ -3,7 +3,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class RuntimeExampleTest
+public class EditorExampleTest
 {
     // A Test behaves as an ordinary method
     [Test]
