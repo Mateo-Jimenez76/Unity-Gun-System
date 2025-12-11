@@ -6,7 +6,7 @@ public class Gun : MonoBehaviour
 {
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform spawnPoint;
-    [SerializeField] float bulletSpeed = 500;
+    [SerializeField] float bulletSpeed = 10;
     [Header("Shooting Settings")]
     [SerializeField] int bulletsPerShot = 1;
     [SerializeField] float spread;
@@ -63,10 +63,11 @@ public class Gun : MonoBehaviour
         onCooldown = true;
         for(int i = 0; i < bulletsPerShot; i++)
         {
-            GameObject bullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
+            spawnPoint.localRotation = Quaternion.Euler(new Vector3(spawnPoint.localRotation.x, spawnPoint.localRotation.y,Random.Range(-spread,spread)));
+            GameObject bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
             if (bullet.TryGetComponent<Rigidbody2D>(out Rigidbody2D rb))
             {
-                rb.AddForce(transform.up * bulletSpeed);
+                rb.linearVelocity = spawnPoint.up * bulletSpeed;
             }
         }
         yield return new WaitForSeconds(shootingCoolDown);
