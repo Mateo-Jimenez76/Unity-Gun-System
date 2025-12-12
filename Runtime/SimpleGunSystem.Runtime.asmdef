@@ -3,9 +3,11 @@
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
-    "excludePlatforms": ["Editor"],
+    "excludePlatforms": [
+        "Editor"
+    ],
     "allowUnsafeCode": false,
-    "overrideReferences": true,
+    "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
