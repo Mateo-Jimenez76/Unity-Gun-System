@@ -5,16 +5,14 @@
   "description": "",
   "unity": "6000.2",
   "unityRelease": "",
-  "documentationUrl": "https://example.com/",
-  "changelogUrl": "https://example.com/changelog.html",
-  "licensesUrl": "https://example.com/licensing.html",
+  "documentationUrl": "https://github.com/Mateo-Jimenez76/Unity-Gun-System",
+  "changelogUrl": "CHANGELOG.md",
   "dependencies": {
 
  },
  "keywords": [
-    "keyword1",
-    "keyword2",
-    "keyword3"
+    "Gun",
+    "Simple"
   ],
   "author": {
     "name": "Mateo Jimenez Jones",
