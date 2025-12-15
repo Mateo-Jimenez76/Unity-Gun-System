@@ -10,7 +10,7 @@ public class Gun : MonoBehaviour
     [Header("Shooting Settings")]
     [SerializeField] int bulletsPerShot = 1;
     [SerializeField] float spread;
-    [SerializeField] float shootingCoolDown = 0.25f;
+    [SerializeField] float shootingCooldown = 0.25f;
     [SerializeField] bool allowButtonHolding;
     private InputAction shootAction;
     private bool onCooldown = false;
@@ -72,6 +72,31 @@ public class Gun : MonoBehaviour
         }
         yield return new WaitForSeconds(shootingCoolDown);
         onCooldown = false;
+    }
+
+    public void SetBulletSpeed(float amount)
+    {
+        bulletSpeed = amount;
+    }
+
+    public void SetBulletsPerShot(float amount)
+    {
+        bulletsPerShot = amount;
+    }
+
+    public void SetSpread(float amount)
+    {
+        spread = amount;
+    }
+
+    public bool IsOnCooldown()
+    {
+        return onCooldown;
+    }
+
+    public void SetShootingCooldown(float amount)
+    {
+        shootingCooldown = amount;
     }
 
 }
