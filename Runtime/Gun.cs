@@ -4,14 +4,18 @@ using UnityEngine.InputSystem;
 
 public class Gun : MonoBehaviour
 {
+    [Header("Projectile Settings")]
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform spawnPoint;
     [SerializeField] float bulletSpeed = 10;
     [Header("Shooting Settings")]
+    [Tooltip("The amount of projectiles to spawn when the DoShoot function is called.")]
     [SerializeField] int bulletsPerShot = 1;
     [SerializeField] float spread;
     [SerializeField] float shootingCooldown = 0.25f;
+    [Tooltip("If enabled, holding down the shoot button will keep automatically firing projectiles.")]
     [SerializeField] bool allowButtonHolding;
+    
     private InputAction shootAction;
     private bool onCooldown = false;
     private const string SHOOTACTIONSTRING = "Attack";
