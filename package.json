@@ -1,16 +1,14 @@
 {
   "name": "com.mateojimenez.simplegunsystem",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "Simple Gun System",
   "description": "",
   "unity": "6000.2",
   "unityRelease": "",
   "documentationUrl": "https://github.com/Mateo-Jimenez76/Unity-Gun-System",
   "changelogUrl": "CHANGELOG.md",
-  "dependencies": {
-
- },
- "keywords": [
+  "dependencies": {},
+  "keywords": [
     "Gun",
     "Simple"
   ],
@@ -19,4 +17,3 @@
     "url": "https://github.com/Mateo-Jimenez76"
   }
 }
-
