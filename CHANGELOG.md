@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/Mateo-Jimenez76/Unity-Gun-System/compare/v1.2.0...v2.0.0) (2025-12-16)
+
+
+### Features
+
+* **Gun.cs:** Added tooltips for all inspector variables ([1a32c56](https://github.com/Mateo-Jimenez76/Unity-Gun-System/commit/1a32c56befd7c3f19b83716c3266353874b4d207))
+
+
+### BREAKING CHANGES
+
+* **Gun.cs:** Replaced all references to "bullet" to "projectile" to accommodate more generic use cases.
+
+
+
 # [1.2.0](https://github.com/Mateo-Jimenez76/Unity-Gun-System/compare/v1.1.0...v1.2.0) (2025-12-15)
 
 
