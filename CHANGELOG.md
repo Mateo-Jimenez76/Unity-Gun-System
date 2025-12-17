@@ -1,3 +1,12 @@
+## [2.1.1](https://github.com/Mateo-Jimenez76/Unity-Gun-System/compare/v2.1.0...v2.1.1) (2025-12-17)
+
+
+### Bug Fixes
+
+* Corrected editor assembly missing refence to runtime assembly ([cc4e78c](https://github.com/Mateo-Jimenez76/Unity-Gun-System/commit/cc4e78cf0589fee12d5efa8866405fa89809b80e))
+
+
+
 # [2.1.0](https://github.com/Mateo-Jimenez76/Unity-Gun-System/compare/v2.0.0...v2.1.0) (2025-12-17)
 
 
