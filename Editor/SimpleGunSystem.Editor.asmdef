@@ -1,8 +1,12 @@
 {
     "name": "SimpleGunSystem.Editor",
     "rootNamespace": "",
-    "references": [],
-    "includePlatforms": ["Editor"],
+    "references": [
+        "GUID:24dfa5ef7af64b041866166e41a46311"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
