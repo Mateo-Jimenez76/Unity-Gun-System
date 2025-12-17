@@ -1,3 +1,12 @@
+# [2.1.0](https://github.com/Mateo-Jimenez76/Unity-Gun-System/compare/v2.0.0...v2.1.0) (2025-12-17)
+
+
+### Features
+
+* **Gun.cs:** Created Custom Inspector ([c5dc425](https://github.com/Mateo-Jimenez76/Unity-Gun-System/commit/c5dc425482847eeaef62d8bf8f77ccfe22c09434))
+
+
+
 # [2.0.0](https://github.com/Mateo-Jimenez76/Unity-Gun-System/compare/v1.2.0...v2.0.0) (2025-12-16)
 
 
