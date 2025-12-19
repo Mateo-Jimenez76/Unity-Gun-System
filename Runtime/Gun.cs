@@ -79,7 +79,7 @@ public class Gun : MonoBehaviour
                 rb.linearVelocity = spawnPoint.up * projectileSpeed;
             }
         }
-        yield return new WaitForSeconds(shootingCoolDown);
+        yield return new WaitForSeconds(shootingCooldown);
         onCooldown = false;
     }
 
@@ -88,7 +88,7 @@ public class Gun : MonoBehaviour
         projectileSpeed = amount;
     }
 
-    public void SetBulletsPerShot(float amount)
+    public void SetBulletsPerShot(int amount)
     {
         projectilesPerShot = amount;
     }
