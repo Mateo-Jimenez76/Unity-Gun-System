@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class Gun : MonoBehaviour
 {
+    [SerializeField] GunScriptableObject gunScriptableObject;
     [Header("Projectile Settings")]
     [Tooltip("The GameObject to instantiate upon shooting.")]
     [SerializeField] GameObject projectilePrefab;
