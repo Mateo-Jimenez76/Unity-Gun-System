@@ -5,7 +5,6 @@ using UnityEditor;
 public class GunScriptableObjectEditor : Editor
 {
     SerializedProperty projectilePrefab;
-    SerializedProperty spawnPoint;
     SerializedProperty projectileSpeed;
     SerializedProperty projectilesPerShot;
     SerializedProperty spread;
@@ -16,7 +15,6 @@ public class GunScriptableObjectEditor : Editor
     {
         // Link the properties to the variables
         projectilePrefab = serializedObject.FindProperty("projectilePrefab");
-        spawnPoint = serializedObject.FindProperty("spawnPoint");
         projectileSpeed = serializedObject.FindProperty("projectileSpeed");
         projectilesPerShot = serializedObject.FindProperty("projectilesPerShot");
         spread = serializedObject.FindProperty("spread");
@@ -45,9 +43,6 @@ public class GunScriptableObjectEditor : Editor
                 EditorGUILayout.HelpBox("The projectile needs to have a Rigidbody2D in order for force to be applied to it. No force means no moving.", MessageType.Warning);
             }
         }
-
-        // Spawn Point
-        EditorGUILayout.PropertyField(spawnPoint);
 
         // Projectile Speed
         EditorGUILayout.PropertyField(projectileSpeed);
