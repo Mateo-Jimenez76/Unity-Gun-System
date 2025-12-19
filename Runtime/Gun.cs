@@ -33,6 +33,20 @@ public class Gun : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        if (gunScriptableObject == null) 
+        {
+            return;
+        }
+        gunScriptableObject.projectilePrefab = this.projectilePrefab;
+        gunScriptableObject.projectileSpeed = this.projectileSpeed;
+        gunScriptableObject.projectilesPerShot = this.projectilesPerShot;
+        gunScriptableObject.spread = this.spread;
+        gunScriptableObject.shootingCooldown = this.shootingCooldown;
+        gunScriptableObject.allowButtonHolding = this.allowButtonHolding;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
