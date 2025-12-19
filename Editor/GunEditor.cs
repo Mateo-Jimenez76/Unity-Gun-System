@@ -33,7 +33,9 @@ public class GunEditor : Editor
 
         EditorGUILayout.PropertyField(gunScriptableObject);
 
-        if(gunScriptableObject.objectReferenceValue == null)
+        EditorGUILayout.Space();
+
+        if (gunScriptableObject.objectReferenceValue != null)
         {
             usingScriptableObject = true;
         } else
@@ -95,10 +97,10 @@ public class GunEditor : Editor
             EditorGUILayout.HelpBox("The cooldown can't be negative seconds.", MessageType.Warning);
         }
 
-        EditorGUI.EndDisabledGroup();
-
         // Allow Button Holding
         EditorGUILayout.PropertyField(allowButtonHolding);
+
+        EditorGUI.EndDisabledGroup();
 
         serializedObject.ApplyModifiedProperties();
     }
