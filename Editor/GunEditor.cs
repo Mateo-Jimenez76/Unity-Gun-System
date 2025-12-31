@@ -4,6 +4,7 @@ using UnityEditor;
 [CustomEditor(typeof(Gun))]
 public class GunEditor : Editor
 {
+    SerializedProperty gunScriptableObject;
     SerializedProperty projectilePrefab;
     SerializedProperty spawnPoint;
     SerializedProperty projectileSpeed;
@@ -12,9 +13,11 @@ public class GunEditor : Editor
     SerializedProperty shootingCooldown;
     SerializedProperty allowButtonHolding;
 
+    private bool usingScriptableObject = false;
     private void OnEnable()
     {
         // Link the properties to the variables
+        gunScriptableObject = serializedObject.FindProperty("gunScriptableObject");
         projectilePrefab = serializedObject.FindProperty("projectilePrefab");
         spawnPoint = serializedObject.FindProperty("spawnPoint");
         projectileSpeed = serializedObject.FindProperty("projectileSpeed");
@@ -27,6 +30,20 @@ public class GunEditor : Editor
     public override void OnInspectorGUI()
     {
         serializedObject.Update();
+
+        EditorGUILayout.PropertyField(gunScriptableObject);
+
+        EditorGUILayout.Space();
+
+        if (gunScriptableObject.objectReferenceValue != null)
+        {
+            usingScriptableObject = true;
+        } else
+        {
+            usingScriptableObject = false;
+        }
+
+        EditorGUI.BeginDisabledGroup(usingScriptableObject);
 
         // --- Header: Projectile Settings ---
         EditorGUILayout.LabelField("Projectile Settings", EditorStyles.boldLabel);
@@ -82,6 +99,8 @@ public class GunEditor : Editor
 
         // Allow Button Holding
         EditorGUILayout.PropertyField(allowButtonHolding);
+
+        EditorGUI.EndDisabledGroup();
 
         serializedObject.ApplyModifiedProperties();
     }
