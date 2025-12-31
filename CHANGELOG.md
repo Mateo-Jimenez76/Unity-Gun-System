@@ -1,3 +1,18 @@
+# [2.2.0](https://github.com/Mateo-Jimenez76/Unity-Gun-System/compare/v2.1.2...v2.2.0) (2025-12-31)
+
+
+### Bug Fixes
+
+* **Gun Custom Inspector:** Preventing editing when Gun Scriptable Object is null ([e20906f](https://github.com/Mateo-Jimenez76/Unity-Gun-System/commit/e20906fdfb2cc1dfd3424bb3aaf7268588516e62))
+
+
+### Features
+
+* **Scriptable Objects:** Add a custom editor for GunScriptableObject ([936ba08](https://github.com/Mateo-Jimenez76/Unity-Gun-System/commit/936ba08a8b791e40ea6aad8114d61e8347eb8fe6))
+* **Scriptable Objects:** Created Scriptable Object for Gun.cs ([2de35cb](https://github.com/Mateo-Jimenez76/Unity-Gun-System/commit/2de35cb54532703ad6b8396cea64993e01c42ba8))
+
+
+
 ## [2.1.2](https://github.com/Mateo-Jimenez76/Unity-Gun-System/compare/v2.1.1...v2.1.2) (2025-12-19)
 
 
@@ -36,15 +51,6 @@
 ### BREAKING CHANGES
 
 * **Gun.cs:** Replaced all references to "bullet" to "projectile" to accommodate more generic use cases.
-
-
-
-# [1.2.0](https://github.com/Mateo-Jimenez76/Unity-Gun-System/compare/v1.1.0...v1.2.0) (2025-12-15)
-
-
-### Features
-
-* Add headers and tooltips to gun settings ([8637378](https://github.com/Mateo-Jimenez76/Unity-Gun-System/commit/863737802e4e29f611f46f4e88abf130be9cc04c))
 
 
 
